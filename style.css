@@ -1,0 +1,66 @@
+body {
+    font-size: 15pt;
+}
+.p{
+    background: grey;
+    color: #4FE3BC;
+    text-align: center;
+}
+.button{
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.black{
+    background: black;
+    color: white;
+}
+.container{
+    margin: 10px auto;
+    width: 400px;
+    height: 200px;
+    background: mediumpurple;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+}
+.container p{
+    text-align: center;
+    background: purple;
+    color: white;
+}
+.calculator{
+    margin: 10px auto;
+    width: 350px;
+    background: grey;
+    padding: 10px;
+    color: white;
+}
+.calculator h3{
+    text-align: center;
+}
+.calculator input{
+    font-size: 1rem;
+    padding: 5px;
+    color: black;
+}
+.value{
+    padding: 5px;
+    font-size: 1.5rem;
+}
+.calc{
+    padding: 5px;
+}
+.calculator > span{
+    display: block;
+    padding: 5px;
+}
+.sum{
+    background-color: black;
+    color: white;
+}
