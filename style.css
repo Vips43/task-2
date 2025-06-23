@@ -19,6 +19,7 @@ body {
 }
 .container{
     margin: 10px auto;
+    padding: 10px;
     width: 400px;
     height: 200px;
     background: mediumpurple;
@@ -33,6 +34,10 @@ body {
     text-align: center;
     background: purple;
     color: white;
+}
+.container .date{
+    display: block;
+    margin: 5px auto;
 }
 .calculator{
     margin: 10px auto;
