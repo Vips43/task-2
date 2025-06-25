@@ -1,71 +1,76 @@
-body {
-    font-size: 15pt;
+*{
+  margin: 0;
+  padding: 0;
+  
 }
-.p{
-    background: grey;
-    color: #4FE3BC;
-    text-align: center;
+section{
+  height: 100%;
+  transition: background .5s;
+  
 }
-.button{
-    margin: 5px auto;
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
+.section-1{
+  width: 70%;
+  background: #51589D;
+  margin: 10px auto;
+  padding: 10px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.section-1 .colorBtn{
+  padding: 5px;
+  margin: 5px auto;
+}
+.section-2{
+  width: 70%;
+  height: 100px;
+  margin: 10px auto;
+  background: #1A1F53;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid grey;
+}
+.section-2 .DTbtn{
+  padding: 5px;
+  margin: 5px;
+}
+.section-2 .showDateTime{
+  display: inline-block;
+  background: white;
+  color: #000;
+  position: absolute;
+}
+.section-3{
+  width: 70%;
+  margin: 10px auto;
+  background: #66BE89;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.section-3 input{
+  padding: 10px;
+  font-size: 1rem;
+}
+.section-3 .result{
+  padding: 10px 15px;
+}
+.section-3 .sum{
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 5px;
+  
 }
 .black{
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
-.container{
-    margin: 10px auto;
-    padding: 10px;
-    width: 400px;
-    height: 200px;
-    background: mediumpurple;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 10px;
-}
-.container p{
-    text-align: center;
-    background: purple;
-    color: white;
-}
-.container .date{
-    display: block;
-    margin: 5px auto;
-}
-.calculator{
-    margin: 10px auto;
-    width: 350px;
-    background: grey;
-    padding: 10px;
-    color: white;
-}
-.calculator h3{
-    text-align: center;
-}
-.calculator input{
-    font-size: 1rem;
-    padding: 5px;
-    color: black;
-}
-.value{
-    padding: 5px;
-    font-size: 1.5rem;
-}
-.calc{
-    padding: 5px;
-}
-.calculator > span{
-    display: block;
-    padding: 5px;
-}
-.sum{
-    background-color: black;
-    color: white;
+.border{
+  outline: none;
+  border-radius: 5px;
+  border: none;
 }

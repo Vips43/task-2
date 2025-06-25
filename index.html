@@ -10,21 +10,26 @@
 </head>
 
 <body>
-  <p class="p">Wanna see a magic <br> press the button</p>
-  <button class="button">Press me</button>
   
-  <div class="container">
-    <p>Want to see a current Date and Time <br />press button</p>
-    <button class="btn">Button</button>
-    <p class="date"></p>
-  </div>
-  <section class="calculator">
-    <h3>Enter two numbers to Add </h3> <br>
-    Enter first number: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="number" id="fnum" /> <br>
-    Enter second number: <input type="number" id="snum"/> <br>
-    <span>Total is:-  <span class="sum"></span></span> <br />
-    <button class="calc" onclick="sum();">calculate</button>
+  <section class="section-1">
+    <h1>Color inverter</h1>
+    <p class="co">Press the button to invert color</p>
+    <button class="colorBtn border">press me</button>
+    
   </section>
+  <section class="section-2">
+    <h2>Show Date and Time</h2>
+    <button class="DTbtn border" >Press me</button>
+    <p class="showDateTime"></p>
+  </section>
+  <section class="section-3">
+    <h3>Enter number to Get calculate</h3>
+     <input type="number" id="fnum" placeholder="Enter 1st number"><br><br>
+    <input type="number" id="snum" placeholder="Enter 2nd number "><br><br>
+    <span>Total is:- <span class="sum"></span></span> <br><br>
+    <button class="result border" onclick="total();">Total</button>
+  </section>
+  
   <script src="main.js"></script>
 </body>
 </html>
