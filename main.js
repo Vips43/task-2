@@ -1,17 +1,27 @@
-const p = document.querySelector('.p')
-const button = document.querySelector('.button')
-const btn = document.querySelector('.btn')
-const date = document.querySelector('.date')
+const section1 = document.querySelector('.section-1')
+const colorBtn = document.querySelector('.colorBtn')
+const section = document.querySelector('.section') 
+const result = document.querySelector('.result')
+const dtBtn = document.querySelector('.DTbtn')
+const showDateTime = document.querySelector('.showDateTime')
 
 function changeColor(){
-  p.classList.toggle('black')
-  button.classList.toggle('black')
+  section1.classList.toggle('black')
+  
+
+  document.querySelector('body').classList.toggle('black')
+  document.querySelector('.section-2').classList.toggle('black')
+  document.querySelector('.section-3').classList.toggle('black')
+  document.querySelectorAll('button').forEach((e)=>{
+    e.classList.toggle('black')
+  })
+  
 }
 
-button.addEventListener('click',()=>{
+colorBtn.addEventListener('click',()=>{
   changeColor();
 })
- btn.addEventListener('click',()=>{
+ dtBtn.addEventListener('click',()=>{
    dateTime();
  })
  
@@ -21,14 +31,10 @@ function dateTime() {
     const currentTime = now.toLocaleTimeString();
     const value = `Thanks for clicking me <br/><br/> Current date: ${currentDate} <br/>
     Current time: ${currentTime}`
-    date.innerHTML = value
+    showDateTime.innerHTML = value
 }
 
-
-
-
-
-function sum(){
+function total(){
   let fnum = document.getElementById('fnum').value;
   let snum = document.getElementById('snum').value;
   let sum = document.querySelector('.sum')
